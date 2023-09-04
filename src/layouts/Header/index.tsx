@@ -1,5 +1,6 @@
 import logo from "../../assets/Images/LOGO.svg";
 import "../../assets/Styles/sass/layouts/_header.scss";
+import { NavLink } from "react-router-dom"
 export default function Header() {
   return (
     <header>
@@ -9,8 +10,19 @@ export default function Header() {
         </div>
         <div className="menu_items_container">
           <ul>
-            <li>Accueil</li>
-            <li>A Propos</li>
+            <li>
+              <NavLink to="/" className={(link) => link.isActive ? "active" : ""}>
+                Accueil
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={(link) => link.isActive ? "active" : ""}
+              >
+                A Propos
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

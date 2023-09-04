@@ -1,7 +1,11 @@
+import "../../assets/Styles/sass/layouts/_footer.scss"
+import logo from "../../assets/Images/LOGO-white.svg";
+
 export default function Footer() {
   return (
-    <div className="App">
-      <h1>Footer</h1>
-    </div>
+    <footer className="footer">
+      <img src={logo} alt="" />
+      <span>© 2020 Kasa. All rights reserved</span>
+    </footer>
   );
 }

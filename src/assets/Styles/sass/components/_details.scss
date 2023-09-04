@@ -1,0 +1,87 @@
+.details {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  & summary {
+    background: #ff6060;
+    border-radius: 10px;
+
+    z-index: 100;
+    height: 52px;
+    display: flex;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    h3 {
+      font-size: 20px;
+    }
+    & span {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      & div svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+      content: "";
+    }
+  }
+  & .decription {
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    background: #f6f6f6;
+    border-radius: 0 0 20px 20px;
+    font-family: "Montserrat", sans-serif;
+    & p {
+      color: #ff6060;
+
+      font-weight: 800;
+      padding: 0 10px;
+      font-size: 16px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      line-height: 25px;
+    }
+  }
+  .list {
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    width: 100%;
+    background: #f6f6f6;
+    border-radius: 0 0 20px 20px;
+  }
+  .list p {
+    color: #ff6060;
+    padding: 10px;
+    font-weight: 800;
+  }
+}
+
+.details[open] summary span {
+  .open {
+    display: none;
+  }
+  .close {
+    display: block;
+  }
+}
+.details summary span {
+  .open {
+    display: block;
+  }
+  .close {
+    display: none;
+  }
+}

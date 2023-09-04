@@ -1,11 +1,30 @@
 .big_banner {
-  height: 150px;
-  background: rgb(218, 59, 59);
-  background: url(../../../Images/bg1.png);
+  height: 111px;
+
+  width: 100%;
+  min-width: 335px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url(../../../Images/bg1.png);
   background-size: cover;
   background-position-y: center;
   border-radius: 20px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .big_banner_title {
   color: white;
+  text-align: center;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .big_banner {
+    height: 203px;
+  }
+  .big_banner_title {
+    color: white;
+    text-align: center;
+    font-size: 48px;
+  }
 }

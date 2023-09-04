@@ -1,8 +1,18 @@
 import "../../assets/Styles/sass/components/_banner.scss";
-export default function Banner() {
+interface Tprops {
+  title?: string,
+
+}
+export default function Banner({ title }: Tprops) {
   return (
-    <div className="big_banner">
-      <h1 className="big_banner_title">Chez Vous, partout et ailleurs</h1>
+    <div
+      className="big_banner"
+    >
+      <h1
+        className="big_banner_title"
+      >
+        {title}
+      </h1>
     </div>
   );
 }

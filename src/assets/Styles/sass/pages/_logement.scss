@@ -1,0 +1,122 @@
+.logement {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  main {
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    min-width: 335px;
+    max-width: 1440px;
+    padding: 0 15px;
+    .content {
+      width: 100%;
+      margin-bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      min-width: 335px;
+      .tags-title {
+        .title-location {
+          margin-top: 10px;
+          width: 80%;
+        }
+        h2 {
+          font-size: 18px;
+          font-family: "Montserrat", sans-serif;
+          color: #ff6060;
+        }
+        span {
+          display: block;
+          margin: 10px 0;
+          font-family: "Montserrat", sans-serif;
+          color: #ff6060;
+          font-size: 14px;
+          font-weight: 900;
+        }
+        .tags {
+          display: flex;
+          gap: 5px;
+          width: 100%;
+        }
+      }
+      .profile-stars {
+        margin-top: 10px;
+        display: flex;
+        height: 50px;
+        div {
+          width: 50%;
+        }
+        .stars {
+          display: flex;
+          gap: 10px;
+          svg {
+            width: 20px;
+            color: #e3e3e3;
+          }
+          svg.active {
+            color: #ff6060;
+          }
+        }
+        .profile {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          .name {
+            display: flex;
+            justify-content: center;
+
+            width: auto;
+            font-family: "Montserrat", sans-serif;
+            color: #ff6060;
+            div {
+              font-size: 19px;
+              font-weight: 900;
+            }
+          }
+          .photo {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            border-radius: 100%;
+            overflow: clip;
+          }
+        }
+      }
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .decription {
+        color: #ff6060;
+      }
+    }
+    @media (min-width: 1024px) {
+      .detail {
+        flex-direction: row;
+        .decriptions,
+        .equipements {
+          width: 50%;
+        }
+      }
+      .content {
+        flex-direction: row;
+        justify-content: space-between;
+        .profile-stars {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: end;
+          height: auto;
+          width: 50%;
+          .stars {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
