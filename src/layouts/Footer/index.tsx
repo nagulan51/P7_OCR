@@ -1,5 +1,5 @@
-import "../../assets/Styles/sass/layouts/_footer.scss"
-import logo from "../../assets/Images/LOGO-white.svg";
+import "../../assets/Styles/sass/layouts/_footer.scss";
+import logo from "../../assets/images/LOGO-white.svg";
 
 export default function Footer() {
   return (
