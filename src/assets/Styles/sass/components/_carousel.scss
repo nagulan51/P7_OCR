@@ -1,13 +1,13 @@
 .carousel {
   $width: 335px;
-  $height: auto;
+  $height: 330px;
   position: relative;
   border-radius: 10px;
   overflow: clip;
   width: 100%;
   max-height: 500px;
   height: $height;
-
+  user-select: none;
   .next,
   .back {
     z-index: 10;
@@ -24,6 +24,16 @@
       width: 10px;
     }
   }
+  @media (min-width: 640px) {
+    .next,
+    .back {
+      width: 100px;
+      svg {
+        width: 30px;
+      }
+    }
+  }
+
   .next {
     top: 0;
     right: 0;
@@ -38,14 +48,22 @@
     display: flex;
     scroll-behavior: smooth;
     pointer-events: none;
+
     div {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: $height;
       img {
+        position: absolute;
         width: 100%;
         height: 100%;
         display: block;
         object-fit: cover;
       }
     }
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -55,16 +73,12 @@
     }
   }
 }
+
 @media (min-width: 640px) {
-  $width: 640px;
-  $height: 415px;
-  .carousel {
-    .next,
-    .back {
-      width: 100px;
-      svg {
-        width: 30px;
-      }
-    }
+  $height: 500px;
+
+  .carousel,
+  .carousel .images div {
+    height: $height;
   }
 }
