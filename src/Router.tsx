@@ -32,38 +32,4 @@ export const routers = createBrowserRouter([
   },
 ]);
 const Router = () => <RouterProvider router={routers} />;
-// function App() {
-//   return
-//   // return (
-//   //   <BrowserRouter>
-//   //     <Route>
-//   //       <Route path="/" element={<Home />} />
-//   //       <Route path="/about" element={<About />} />
-//   //       <Route
-//   //         path="/demo"
-//   //         element={<Demo />}
-//   //       />
-//   //       <Route
-//   //         path="/logement/:id"
-//   //         element={<logement />}
-//   //         loader={async () => {
-//   //           console.log("loader logement");
-//   //           return null
-
-//   //         }}
-//   //       />
-//   //       {/* <Route
-//   //         path="/card"
-//   //         element={
-//   //           <Cards
-//   //             image="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
-//   //             title="test"
-//   //           />
-//   //         }
-//   //       /> */}
-//   //     </Route>
-//   //   </BrowserRouter>
-//   // );
-// }
-
 export default Router;
