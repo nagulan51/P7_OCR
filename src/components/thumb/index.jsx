@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/Styles/sass/components/_thumb.scss";
 
-const Thumb = (props: { title: string; image: string; id: string }) => {
+const Thumb = (props) => {
   const { id, image, title } = props;
   return (
     <div className="thumb">

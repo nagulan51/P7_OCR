@@ -1,9 +1,5 @@
 import "../../assets/Styles/sass/components/_banner.scss";
-interface Tprops {
-  title?: string,
-
-}
-export default function Banner({ title }: Tprops) {
+export default function Banner({ title }) {
   return (
     <div
       className="big_banner"

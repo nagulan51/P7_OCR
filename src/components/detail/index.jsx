@@ -1,10 +1,6 @@
 import '../../assets/Styles/sass/components/_details.scss';
 
-const Details = (props: {
-    list?: string[],
-    decription?: string,
-    name: string,
-}) => {
+const Details = (props) => {
     const { decription, list, name } = props;
     return (
         <details className='details'>

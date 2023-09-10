@@ -2,9 +2,6 @@ import "../../assets/Styles/sass/components/_cards.scss";
 export default function Card({
   image,
   title,
-}: {
-  image: string;
-  title: string;
 }) {
   return (
     <article className="card-logement">
